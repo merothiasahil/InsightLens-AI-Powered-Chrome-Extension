@@ -1,0 +1,12 @@
+flask
+requests
+beautifulsoup4
+transformers
+torch
+textblob
+python-dotenv
+pytesseract
+Pillow
+wordcloud
+youtube_transcript_api
+sentencepiece

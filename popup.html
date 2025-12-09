@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>InsightLens 🧠</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="icons/icon128.png" alt="logo" class="logo" />
+    <h2>InsightLens 🔍</h2>
+    <p class="subtitle">AI-Powered Content Analyzer</p>
+
+    <textarea id="text-input" placeholder="Paste your text here..."></textarea>
+
+    <div class="buttons">
+      <button id="analyze-text">✨ Analyze Text</button>
+      <button id="analyze-image">🖼 Analyze Image</button>
+      <button id="generate-wordcloud">☁️ WordCloud</button>
+      <button id="capture-snippet">📸 Capture Snippet</button>
+
+    </div>
+
+    <input type="file" id="image-file" accept="image/*" hidden />
+
+    <input type="text" id="url-input" placeholder="Paste article URL..." />
+    <button id="analyze-url">🌐 Analyze URL</button>
+
+    <input type="text" id="yt-url" placeholder="Paste YouTube video URL..." />
+    <button id="analyze-youtube">🎥 Analyze YouTube</button>
+
+    <div class="results">
+      <h4>📝 Summary:</h4>
+      <pre id="summary-output">...</pre>
+
+      <h4>💬 Sentiment:</h4>
+      <pre id="sentiment-output">...</pre>
+
+      <h4>☁️ WordCloud:</h4>
+      <img id="wordcloud-output" />
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
